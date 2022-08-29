@@ -6,7 +6,7 @@
 #    By: manavarr <manavarr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/30 19:46:18 by manavarr          #+#    #+#              #
-#    Updated: 2022/06/22 21:15:50 by manavarr         ###   ########.fr        #
+#    Updated: 2022/06/22 22:51:37 by manavarr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -82,6 +82,7 @@ clean:
 fclean: clean
 	$(RM) $(NAME) 
 
-re: fclean all
+re: fclean
+	$(MAKE)
 
 .PHONY: all bonus clean fclean re
